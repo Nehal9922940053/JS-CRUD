@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+
+.header
+{
+    width: 100vw;
+    height: 60px;
+    padding: 0px 30px;
+    background-color: rgb(6, 8, 98);
+    display: flex;
+
+}
+
+.header img{
+    height: 60px;
+    width: 60px;
+    padding: 12px;
+}
+
+.header h2{
+    font-size: 24px;
+    padding: 12px;
+    color: #fff;
+}
+
+/*upper btn box*/
+.upper-btn-box{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding: 30px;
+}
+.upper-btn-box .left-box{
+    width: 50%;
+    height: 100%;  
+    display: flex;
+    align-items: center;
+}
+
+.upper-btn-box .left-box input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.upper-btn-box .left-box button, .upper-btn-box .right-box button{
+    border: none;
+    outline: none;
+    background-color: #ff0303;
+    padding: 13px;
+    font-size: 16px;
+    color: #fff;
+    margin: 0px 10px;
+    font-weight: bolder;
+}
+
+.upper-btn-box .right-box{
+    width: 50%;
+    height: 100%;
+    /* background-color: #06136c;*/
+    display: flex;
+} 
+
+.upper-btn-box .right-box i{
+    font-size: 25px;
+    color: #d10000;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.upper-btn-box .right-box input{
+    padding: 13px;
+    outline: none;
+    border: none;
+    width: 80%;
+    border-bottom: 3px solid rgb(253, 43, 2);
+}
+
+/*table*/
+.table-box{
+    width: 100%;
+    padding: 30px;
+}
+
+.table-box table{
+    width: 100%;
+    border: 5px solid #0b0375;
+    padding: 2px;
+}
+
+.table-box table tr th{
+    font-size: larger;
+    border: 1px solid #217aff;
+    padding:15px;
+}
+
+.table-box table tr td{
+    border: 1px solid #217aff;
+    padding: 10px 0px 0px;
+    text-align: center;
+}
+
+.table-box table tr td button{
+    border:none;
+    outline: none;
+    background-color: #fff;
+    font-size: 25px;
+    color: #fff;
+    margin: 0px 10px;
+}
+
+.table-box table tr td button .fa-user-pen{
+color:green;
+}
+.table-box table tr td button .fa-user-slash{
+color:red;
+}
+
+/* start modal*/
+.donorDetails{
+    width: 0%;
+    height: auto;
+    background-color:#fffcfc;
+    border: 5px solid black;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* visibility: hidden; */
+    opacity: 0;
+    z-index: -1;
+    transition:0.5s ease-in-out;
+}
+
+.donorDetails.active{
+    opacity: 1;
+    z-index: 1;
+    width: 40%;
+}
+
+.donorDetails .inputBox{  
+    margin: 15px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.donorDetails .inputBox label{
+    font-size: larger;
+    font-weight: bold;
+    padding: 2px;
+}  
+
+.donorDetails .inputBox input{
+    width: 60%;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    border-bottom:3px solid red;
+    font-size: 18px;
+}
+/*button*/
+
+.donorDetails .inputBox .submit{
+    border: none;
+    outline: none;
+    background-color: #0e770e;
+    padding: 13px;
+    font-size: 16px;
+    color: #fff;
+    margin: 0px 10px;
+    font-weight: bolder;
+}
+
+
+.donorDetails .inputBox .update{
+    border: none;
+    outline: none;
+    background-color: #3784f0;
+    padding: 13px;
+    font-size: 16px;
+    color: #fff;
+    margin: 0px 35px;
+    font-weight: bolder;
+}
+
+.donorDetails center h2{
+    margin-top: 25px;
+}
+.donorDetails .close-icon{
+    position: absolute;
+    right: 0;
+    top: -5px;
+    font-size: 30px;
+    padding: 8px;
+    color: red;
+    
+}
